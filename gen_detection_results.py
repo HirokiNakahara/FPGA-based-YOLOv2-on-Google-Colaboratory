@@ -117,7 +117,7 @@ if __name__ == '__main__':
 #    for idx_data in range(0,30):
         id_ = ids[idx_data]
         img_file = os.path.join(data_dir, 'JPEGImages', id_ + '.jpg')
-        print("\033[1A%d/%d" % (idx_data,datasize))
+#        print("\033[1A%d/%d" % (idx_data,datasize))
 
         # --------------------------------------------
         # Detect Objects
