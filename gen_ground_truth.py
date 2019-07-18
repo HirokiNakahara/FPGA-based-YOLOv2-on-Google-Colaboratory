@@ -159,7 +159,7 @@ for idx_data in range(datasize):
             ymax = int(ymax * (h / args.img_size))
 
         # check area for BBOX
-#        area_ratio = float((xmax - xmin) * (ymax - ymin)) / float(args.img_size ** 2)
+        area_ratio = float((xmax - xmin) * (ymax - ymin)) / float(args.img_size ** 2)
 #
 #        if area_ratio < 0.05:
 #            continue
