@@ -66,7 +66,7 @@ ratio = 3
 for idx_data in range(datasize):
 #for idx_data in range(40,140):
 #    print("%d/%d" % (idx_data,datasize))
-    print("\033[1A%d/%d" % (idx_data,datasize))
+#    print("\033[1A%d/%d" % (idx_data,datasize))
 
     registered = 0
 #    while registered == 0:
@@ -159,10 +159,10 @@ for idx_data in range(datasize):
             ymax = int(ymax * (h / args.img_size))
 
         # check area for BBOX
-        area_ratio = float((xmax - xmin) * (ymax - ymin)) / float(args.img_size ** 2)
-
-        if area_ratio < 0.05:
-            continue
+#        area_ratio = float((xmax - xmin) * (ymax - ymin)) / float(args.img_size ** 2)
+#
+#        if area_ratio < 0.05:
+#            continue
 
 #        print("resized w=%d,h=%d xmin=%d ymin=%d xmax=%d ymax=%d" % (w,h,xmin,ymin,xmax,ymax))        
         line = "%s %d %d %d %d\n" % (name,xmin,ymin,xmax,ymax)
